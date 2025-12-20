@@ -1,0 +1,23 @@
+# Basic dependencies
+wheel==0.45.1
+eventlet==0.30.2
+ryu==4.34
+
+# Deep learning framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Graph Neural Networks (optional, use built-in custom GNN implementation if installation fails)
+# torch-geometric>=2.3.0
+# torch-scatter
+# torch-sparse
+
+# Scientific computing
+numpy>=1.21.0
+networkx>=2.6.0
+
+# HTTP requests
+requests>=2.25.0
+
+# Web services
+webob>=1.8.0
