@@ -1,4 +1,4 @@
-# GNN-PPO: Graph Neural Network-Enhanced Deep Reinforcement Learning for DDoS Mitigation in Software-Defined Networks
+# DRShield: Coordinating Line-Rate Enforcement and Global Adaptation for Dynamic DDoS Defense
 
 > **Anonymous Submission for Peer Review**
 
@@ -22,14 +22,14 @@ This repository provides the implementation of a novel framework for DDoS attack
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     SDN Controller                               │
+│                     SDN Controller                              │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
+│                                                                 │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────────┐   │
-│  │   Topology   │───▶│  Graph State │───▶│   GNN Encoder    │   │
+│  │   Topology   │───▶│  Graph State │───▶│   GNN Encoder  │   │
 │  │   Discovery  │    │    Builder   │    │   (GCN/GAT)      │   │
 │  └──────────────┘    └──────────────┘    └────────┬─────────┘   │
-│                                                    │             │
+│                                                    │            │
 │                                           ┌────────▼────────┐   │
 │                                           │ Node Embeddings │   │
 │                                           └────────┬────────┘   │
@@ -44,7 +44,7 @@ This repository provides the implementation of a novel framework for DDoS attack
 │                     │  Actions   │          │   Value   │       │
 │                     │ Deploy/Not │          │ Estimate  │       │
 │                     └────────────┘          └───────────┘       │
-│                                                                  │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -173,7 +173,3 @@ Each switch node is represented by a 7-dimensional feature vector:
 ## License
 
 This project is released under the MIT License for academic and research purposes.
-
----
-
-*This repository is provided for anonymous peer review. Author information will be added upon acceptance.*
